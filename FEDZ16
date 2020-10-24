@@ -1,0 +1,22 @@
+var Car = {
+    name: "Ferrari",
+	model: "458 Italy",
+	color: "purple",
+	horsepower: 570,
+}
+const car1 = new Car('Ferrari');
+car.prototype.toString = function carToString() {
+  return `${this.name}`;
+  return `${this.model}`;
+  return `${this.color}`;
+  return `${this.horsepower}`;
+};
+console.log(dog1.toString());
+var car2 = {
+	name: "Ferrari",
+	model: "458 Italy",
+	color: "purple",
+	horsepower: 570,
+}
+var car3 = Object.toJSON(car1) == Object.toJSON(car2);
+console.log(car3);
